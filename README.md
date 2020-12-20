@@ -9,6 +9,6 @@ I would like to not only showcase the skills I have been learning, but also to t
 ### On this page, I will cover:
 1. My interests
 2. Where I live
-3. My relevant experiences and what has formed my passion
-4. How I view and define myself
+3. My motivation and passion
+4. A tad bit about me
 5. Methods to contact me
