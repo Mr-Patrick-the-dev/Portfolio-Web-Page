@@ -1,1 +1,114 @@
+* {
+  box-sizing: border-box;
+}
 
+
+/*Header in the body will have a dark blue background with light gray letters*/
+
+header {
+  background-color: #040023;
+}
+
+/*Name in header will be center, title will be center, navigation right*/
+
+header div h1 {
+  font-size: 40px;
+}
+
+header div h2 {
+  font-size: 35px;
+}
+header div h1,h2 {
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: lightgray;
+  text-align: center;
+  margin: 0%;
+}
+
+header div nav {
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 10px;
+  color: lightgray;
+  text-align: right;
+}
+
+header div nav h3 {
+  padding-top: 10px;
+  margin: 0px;
+}
+/*Main section will have a light gray background with various versions of dark blue letters*/
+body {
+  background-color: rgb(168, 168, 177);
+}
+
+main article {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  list-style: inside;
+}
+
+main article h3 {
+  font-size: 30px;
+  color: #010649;
+}
+
+main article h4 {
+  font-size: 18px;
+  color: #151C84;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+main article p, ul, ol {
+  font-size: 15px;
+  color: #151C84;
+}
+
+.profile-pic {
+  width: 200px;
+  height: auto;
+}
+
+.beth-pic {
+  width: 50%;
+  height: auto;
+}
+
+
+/*Footer will have the same color scheme as header, but will be smaller, to the left*/
+
+.footer {
+  background-color: #040023;
+  text-align: left;
+  color: lightgrey;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 12px;
+  height: 35px;
+} 
+
+/*Class for the horizontal rules*/
+  /*Between header and about me*/
+.hr-hug-top {
+  margin-top: 0px;
+  background-color: rgb(59, 18, 241);
+  height: 10px;
+  width: 95%;
+  border-radius: 60px;
+}
+
+  /*Between dividers in article*/
+.hr-bold {
+  background-color: #04094F;
+  height: 12px;
+  width: 600px;
+  border-radius: 55px;
+  margin-top: 35px;
+}
+
+/*pseudo-classed links will be colored light green for link, yellow for visited, pink for hover, orange for active*/
+
+a:link { color: lightgreen; }
+a:visited { color: yellow; }
+a:hover { color: pink; }
+a:active { color: orange;}
