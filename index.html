@@ -16,12 +16,8 @@
     <header>
       <div>
         <h1><strong>Patrick J. Popovitz<strong></h1>
-          </div>
-       <div>
-         <h2><em>Web Developer</em></h2>
-          </div>
-        <div>
-          <nav>
+        <h2><em>Web Developer</em></h2>
+         <nav>
             <!----These links will be pseudo-classes---->
             <h3>Where to?</h3><br>
             <a href="#aboutme">About Me</a><br>
@@ -30,7 +26,7 @@
             <a href="#location">Location</a><br>
             <a href="#contact">Contact Me</a><br>
           </nav>
-           </div>
+          </div>
     </header>
      
     <!----Main will contain the about me, interests, what drives my passion, and contact/location sections------>
@@ -38,18 +34,22 @@
     <!----Div containers will separate about me, interests, what drives my passion, location, and contact info---->
     <!----Horizontal rules will separate each divided section----->
     <main>
+      <hr class="hr-hug-top">
       <article>
         
         <div>
-          <h3>About Me:</h3>
+          <h3 id="aboutme">About Me:</h3>
           <!-----Will also include an appropriate picture of me----->
+        <div>
+          <img class="profile-pic" src="images/patrick-port-pic.jpg" alt="Handsome picture of Patrick J. Popovitz">
+        </div>
           <p>I am a beginning web developer with a thirst for knowledge and a want to learn from those I wish to be like. Currently residing in Bethlehem, Pennsylvania, I work as a Network Support Technician at TuWay Communications. Though I love technology, I have a creative side that wants to express itself. Web development allows me to traverse both of those avenues.</p>
         </div>
         
-        <hr>
+        <hr class="hr-bold">
         
         <div>
-          <h3>Motivation and Passion:</h3>
+          <h3 id="mypassion">Motivation and Passion:</h3>
           <h4>What drives me to go?</h4><br>
           <ol>
             <li>My family, including my wife and two children</li>
@@ -60,11 +60,11 @@
           </ol>
         </div>
         
-        <hr>
+        <hr class="hr-bold">
         
         <div>
-          <h3>My Interests:</h3>
-          <h4>What makes the man?</h4>
+          <h3 id="interests">My Interests:</h3>
+          <h4>What makes the man?</h4><br>
           <ul>
             <li>I am a huge gamer. Part of the reason I began web development is because I wanted to know the code behind some of my favorite games and websites.</li>
               <ul>
@@ -84,32 +84,34 @@
           <p></p>
         </div>
         
-        <hr>
+        <hr class="hr-bold">
         
         <div>
-          <h3>Location:</h3>
+          <h3 id="location">Location:</h3>
           <!---Will also include photo of town/location on map along with name of town/state----->
+          <div>
+            <img class="beth-pic" src="images/bethlehem.jpg" alt="Center city Bethlehem, PA">
+          </div>
           <p>Bethlehem, Pennsylvania</p>
         
         </div>
         
-        <hr>
+        <hr class="hr-bold">
         
         <div>
-          <h3>Contact Me:</h3>
+          <h3 id="contact">Contact Me:</h3>
           <!---Will include my linkedin and github----->
           <!---These links will be pseudo-classes----->
-          <a href="www.linkedin.com/in/patrick-popovitz">My LinkedIn</a>
+          <a href="www.linkedin.com/in/patrick-popovitz">My LinkedIn</a><br>
           <a href="https://github.com/Mr-Patrick-the-dev">My GitHub</a>
         </div>
-        
       </article>
     </main>
 
     <!-----Footer will contain my full name at the bottom of the web page----->
-    <footer>
+    <footer class="footer">
       <div>
-        <p><strong>Patrick Popovitz<strong></p>
+        <p><em>Patrick Popovitz</em></p>
         </div>
     </footer>
     <script src="script.js"></script>
