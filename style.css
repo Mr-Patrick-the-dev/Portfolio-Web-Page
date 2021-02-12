@@ -59,11 +59,6 @@ header nav h3 {
   height: auto;
 }
 
-.project-head {
-  font-size: 17px;
-  color: #010649;
-}
-
 /*Class for the horizontal rules*/
   /*Between header and about me*/
 .hr-hug-top {
@@ -109,6 +104,11 @@ main h2 {
 
 main h3 {
   font-size: 30px;
+  color: #010649;
+}
+
+main h5 {
+  font-size: 17px;
   color: #010649;
 }
 
