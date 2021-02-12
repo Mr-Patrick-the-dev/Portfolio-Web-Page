@@ -4,98 +4,109 @@
 
   <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Patrick Popovitz | The Web Developer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css"/>
    </head>
 
   <body>
-    <!-----Header will contain my name, future job title as h1 and h2 respectively, and a navigation menu------->
-    <!-----Separate section container for each----->
+    <!---Header--->
     <header>
-      <section>
         <h1>Patrick J. Popovitz</h1>
         <!----Emphatic for semantics---->
         <h2><em>Web Developer</em></h2>
+        <!--Navigation-->
          <nav>
             <!----These links will be pseudo-classes---->
             <h3>Where to?</h3><br>
-            <a href="#aboutme">About Me</a><br>
-            <a href="#mypassion">Motivation and Passion</a><br>
-            <a href="#interests">My Interests</a><br>
-            <a href="#location">Location</a><br>
-            <a href="#contact">Contact Me</a><br>
-          </nav>
-      </section>
+            <a href="#aboutme">About me</a>
+            <a href="#portfolio">My Portfolio</a>
+            <a href="#contact">Contact Me</a>
+         </nav>
     </header>
-     
-    <!----Main will contain the about me, interests, what drives my passion, and contact/location sections------>
-    <!----Article will contain the about me, interests, what drives my passion, and the contact/location------>
-    <!----Section containers will separate about me, interests, what drives my passion, location, and contact info---->
-    <!----Horizontal rules will separate each section----->
+     <!--Main section-->
     <main>
       <hr class="hr-hug-top">
-      <article>
-        
-        <section>
-          <h3 id="aboutme">About Me:</h3>
+        <!--Section for the introduction-->
+        <section> 
+          <h2>Hello there!</h2>
           <!-----Will also include an appropriate picture of me----->
-          <section>
+          <div class="group">
+          <div class="item">
           <img class="profile-pic" src="images/patrick-port.JPG" alt="Handsome picture of Patrick J. Popovitz">
-          </section>
-          <p>I am a beginning web developer with a thirst for knowledge and a want to learn from those I wish to be like. Currently residing in Bethlehem, Pennsylvania, I work as a Network Support Technician at TuWay Communications. Though I love technology, I have a creative side that wants to express itself. Web development allows me to traverse both of those avenues.</p>
+          </div>
+          <div class="item-double">
+          <p>The name is Patrick, and I am a growing web developer looking to the best I can be. I wish to learn from both successful, and other budding developers as we work together to make incredible projects.</p>
+          <p>Currently located in Bethlehem, Pennsylvania, I work overnight as the Network Support Technician at TuWay Communications. I have a creative side that I want to express, and a loving family, for support, standing beside me.</p>
+            </div>
+          </div>
         </section>
         
         <hr class="hr-bold">
-        
+        <!--Section for the about me-->
         <section>
-          <h3 id="mypassion">Motivation and Passion:</h3>
-          <h4>What drives me to go?</h4><br>
-          <ol>
-            <li>I've always wanted to provide a better life for my loved ones.</li>
-            <li>I have an extensive love for video games. I really enjoy the teamwork and problem-solving involved.</li>
-            <li>Every morning, when I wake up, I make it a point to do better than the day before.</li>
-            <li>I have an obsession with knowing how things work. Whether it's a puzzle in a video game or the intricacies behind various technology, I feel the need to know.</li>
-            <li>I love the feeling I get when I conquer an almost impassable obstacle. Being able to say "I am proud of the work I've done" can't be replaced to me.</li>
-          </ol>
+          <h3 id="aboutme">About me:</h3>
+          <div class="group">
+            <div class="item">
+              <p>With a background in cooking, I am no stranger to hard work and a team-oriented environment. To me, there is no replacing the comradery between a team after a job well done. While cooking allowed me to be imaginative, I felt I was missing out on displaying my problem-solving abilities. For that reason, I have embarked on the journey to be a Web Developer. I would like to bring said abilities, and my natural knack for working as a part of a team, to the table of my future employer and/or clients.</p>
+          <p>Outside of my professional life and goals, I am a nerd at heart with a love for his family. I enjoy playing video games with my kids and friends. I still have a love for the kitchen though, as I routinely make feasts for my family and loved ones.</p>
+            </div>
+          </div>
         </section>
         
         <hr class="hr-bold">
-        
+        <!--Section for my portfolio-->
         <section>
-          <h3 id="interests">My Interests:</h3>
-          <h4>What makes the man?</h4><br>
-          <ul>
-            <li>I have a gaming team that I play online with. They've become family, and we play games from various genres like Monster Hunter and Madden.
-            <li>I am an avid movie buff, mainly horror movies. There isn't a zombie movie in existence that I have not seen.</li>
-            <li>My favorite sport would have to be American Football, with my favorite team being the Dallas Cowboys (hence the color scheme).</li>
-            <li>The only thing I love more is my family, who I spend all the time that I can with.</li>
-          </ul>
+          <h3 id="portfolio">My Portfolio:</h3>
+          <div class="group">
+            <div class="item">
+          <!--Decoder Ring project-->
+          <img src="images/decoder-ring.png" alt="Basic decoder ring image" class="project-pic">
+           <h5><a href="https://github.com/Mr-Patrick-the-dev/project-decoder-ring">Decoder Ring Script</a></h5>
+          <p>This is a project I completed recently that is strictly JavaScript. I crafted the script and tests myself, and also came up with the algorithms to use for the ciphers.</p>
+            </div>
+          <!--Coming soon-->
+            <div class="item">
+          <img src="images/coming-soon.png" alt="Coming soon sign" class="project-pic">
+          <h5 class="coming">More Coming Soon!</h5>
+          <p>Bear with me, as I am still working on creating projects that will truly stand out!</p>
+            </div>
+          </div>
         </section>
         
         <hr class="hr-bold">
-        
+        <!--Section for Contact me-->
         <section>
-          <h3 id="location">Location:</h3>
-          <!---Will also include photo of town/location on map along with name of town/state----->
-          <section>
-            <img class="beth-pic" src="images/beth-center.JPG" alt="Center city Bethlehem, PA">
-          </section>
-          <p>Bethlehem, Pennsylvania</p>
-        </section>
-        
-        <hr class="hr-bold">
-        
-          <section>
           <h3 id="contact">Contact Me:</h3>
-          <!---Will include my linkedin and github----->
+          <div class="group">
+            <div class="item">
+          <!---Links to my linkedin, github, email, and phone----->
           <!---These links will be pseudo-classes----->
-          <a href="https://www.linkedin.com/in/patrick-popovitz/" target="_blank">My LinkedIn</a><br>
-          <a href="https://github.com/Mr-Patrick-the-dev" target="_blank">My GitHub</a><br>
-          <a href="mailto:patrick.popovitz@gmail.com">Email Me</a>
-          </section>
-      </article>
+          <p>My LinkedIn: <a href="https://www.linkedin.com/in/patrick-popovitz/" target="_blank">Patrick Popovitz</a></p>
+          <p>My GitHub:<a href="https://github.com/Mr-Patrick-the-dev" target="_blank">Mr-Patrick-the-dev</a></p>
+          <p>Email: <a href="mailto:patrick.popovitz@gmail.com">patrick.popovitz@gmail.com</a></p>
+          <p>Phone #: <a href="tel:908-432-0157">(908) 432-0157</a></p>
+          
+          <!---This will be a form to reach me via email-->
+          <form action="https://formspree.io/patrick.popovitz@gmail.com" method="post">
+                <label for="fullName">Name:</label>
+                <input id="fullName" type="text" name="name" placeholder="Your full name here!" required />
+                <label for="email">Email:</label>
+                <input id="email" type="text" name="email" placeholder="Your email here!" required />
+                <label for="email-message">Your message:</label>
+                <textarea id="email-message" name="message" placeholder="Your message here!" required autofocus:"on"></textarea>
+                <br>
+                <button type="submit">Submit</button>
+          </form>
+          <!--Picture of Center City Bethlehem-->
+            </div>
+          <div class="item-double">
+            <img class="beth-pic" src="images/beth-center.JPG" alt="Center city Bethlehem, PA">
+          <p>Bethlehem, Pennsylvania</p>
+            </div>
+          </div>
+      </section>
     </main>
 
     <!-----Footer will contain my full name at the bottom of the web page----->

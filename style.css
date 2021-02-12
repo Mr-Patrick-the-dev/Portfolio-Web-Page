@@ -1,80 +1,89 @@
-* {
-  box-sizing: border-box;
+/*Background of page*/
+body {
+  background-color: rgb(168, 168, 177);
+  margin:0;
 }
 
-
-/*Header in the body will have a dark blue background with light gray letters*/
-
+/*Navigation and Header*/
 header {
   background-color: #040023;
+  display: flex;
+  flex-direction: column;
 }
-
-/*Name in header will be center, title will be center, navigation right*/
 
 header section h1 {
   font-size: 40px;
 }
 
-header section h2 {
+header h2 {
   font-size: 35px;
 }
-header section h1,h2 {
+
+header h1,h2 {
   font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: lightgray;
   text-align: center;
   margin: 0%;
 }
 
-header section nav {
+header nav {
   font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 10px;
+  font-size: 15px;
   color: lightgray;
-  text-align: right;
+  flex-direction: row;
+  text-align: center;
 }
 
-header section nav h3 {
+header nav a {
+  padding-right: 5px;
+}
+
+header nav h3 {
   padding-top: 10px;
   margin: 0px;
 }
-/*Main section will have a light gray background with various versions of dark blue letters*/
-body {
-  background-color: rgb(168, 168, 177);
-}
 
-main article {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-align: center;
-  list-style: inside;
-}
-
-main article h3 {
-  font-size: 30px;
-  color: #010649;
-}
-
-main article h4 {
-  font-size: 18px;
-  color: #151C84;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
-
-main article p, ul, ol {
-  font-size: 15px;
-  color: #151C84;
-}
-
+/*Images*/
 .profile-pic {
-  width: 200px;
+  width: 100%;
   height: auto;
 }
 
 .beth-pic {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
+.project-pic {
+  width:100%;
+  height: auto;
+}
+
+/*Coming soon*/
+.coming {
+  font-size: 17px;
+  color: #010649;
+}
+
+/*Class for the horizontal rules*/
+  /*Between header and about me*/
+.hr-hug-top {
+  margin-top: 0px;
+  background-color: rgb(59, 18, 241);
+  height: 10px;
+  width: 95%;
+  border-radius: 60px;
+}
+
+  /*Section separators*/
+.hr-bold {
+  background-color: #04094F;
+  height: 12px;
+  width: 85%;
+  border-radius: 55px;
+  margin: 0 auto;
+  text-align: center;
+}
 
 /*Footer will have the same color scheme as header, but will be smaller, to the left*/
 
@@ -87,23 +96,47 @@ main article p, ul, ol {
   height: 35px;
 } 
 
-/*Class for the horizontal rules*/
-  /*Between header and about me*/
-.hr-hug-top {
-  margin-top: 0px;
-  background-color: rgb(59, 18, 241);
-  height: 10px;
-  width: 95%;
-  border-radius: 60px;
+/*Typography*/
+
+main {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-  /*Between dividers in article*/
-.hr-bold {
-  background-color: #04094F;
-  height: 12px;
-  width: 600px;
-  border-radius: 55px;
-  margin-top: 35px;
+main h2 {
+  font-size: 32px;
+  color: #010649;
+  padding-bottom: 10px;
+}
+
+main h3 {
+  font-size: 30px;
+  color: #010649;
+}
+
+main p {
+  font-size: 17px;
+  color: #151C84;
+}
+
+main a {
+  font-size: 17px;
+}
+
+/*Mobile-first styling*/
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin:10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
 }
 
 /*pseudo-classed links will be colored light green for link, yellow for visited, pink for hover, orange for active*/
@@ -112,3 +145,51 @@ a:link { color: lightgreen; }
 a:visited { color: yellow; }
 a:hover { color: pink; }
 a:active { color: orange;}
+a {
+  text-decoration: none;
+}
+
+/*Form styling*/
+
+form label {
+  display: block;
+}
+
+form input, form textarea {
+  width: 100%;
+}
+
+form textarea {
+  height: 150px;
+  margin-bottom: 0px;
+}
+
+form button {
+  margin: 10px 0px;
+  border-radius: 15px;
+  background-color: #151C84;
+  color: rgb(168, 168, 177);
+}
+
+/*Desktop format*/
+
+@media all and (min-width: 800px) {
+  
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*Navigation for Desktop*/
+
+  header nav {
+    text-align: right;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    }
+}
